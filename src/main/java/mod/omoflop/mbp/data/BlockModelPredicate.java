@@ -33,6 +33,7 @@ public abstract class BlockModelPredicate implements WorldViewCondition {
         put("state", IsBlockState::parse);
         put("light_range", LightRange::parse);
         put("is_context", IsContext::parse);
+        put("is_powered", IsPowered::parse);
     }};
 
     public static ArrayList<BlockModelPredicate> parseFromJson(JsonElement element) {
